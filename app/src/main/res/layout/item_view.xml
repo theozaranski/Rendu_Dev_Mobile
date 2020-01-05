@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_container"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/user_avatar"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_author"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="100dp"
+        android:background="@color/colorTextView1"
+        android:gravity="center_vertical|end"
+        android:text="AUTHOR"
+        android:textColor="#96C4FF"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_title" />
+
+    <TextView
+        android:id="@+id/id_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/colorTextView1"
+        android:gravity="center"
+        android:text="TITLE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_avatar" />
+
+    <TextView
+        android:id="@+id/id_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@color/colorTextView1"
+        android:text="DESCRIPTION"
+        android:paddingTop="20dp"
+        android:paddingBottom="15dp"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_publishedAt" />
+
+    <TextView
+        android:id="@+id/id_publishedAt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/colorTextView1"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="15dp"
+        android:text="DATE"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/id_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_marginTop="72dp"
+        android:background="@color/colorTextView1"
+        android:paddingTop="20dp"
+        android:paddingBottom="15dp"
+        android:text="CONTENT "
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_description" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/colorTextView1"
+        android:gravity="center"
+        android:text="Auteur : "
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/id_author"
+        app:layout_constraintEnd_toStartOf="@+id/id_author"
+        app:layout_constraintTop_toTopOf="@+id/id_author" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:background="@color/colorTextView1"
+        android:gravity="center"
+        android:text="Date : "
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="123dp"
+        android:layout_margin="2dp"
+        android:background="@color/colorTextView1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_content">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Souces : "
+            android:textColor="#FFFFFF"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/id_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="URL"
+            android:textColor="#FFFFFF"
+            android:textSize="6sp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/id_urlToImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="urlToImage"
+            android:textColor="#FFFFFF"
+            android:textSize="6sp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/id_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="NAME"
+            android:textColor="#FFFFFF"
+            android:textSize="6sp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/id_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="ID"
+            android:textColor="#FFFFFF"
+            android:textSize="6sp"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/redirection_button"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00838F"
+            android:gravity="center"
+            android:text="Redirection vers l'article"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
